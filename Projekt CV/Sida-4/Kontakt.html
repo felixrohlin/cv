@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix CV</title>
+    <link rel="stylesheet" href="/Css/cv.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="https://www.facebook.com/felix.rohlin"><img src="/Pics/facebook.svg" alt="facebook icon"></a>
+        <a href="https://www.instagram.com/felixrohlin/"><img src="/Pics/instagram.svg" alt="facebook icon"></a>
+        <a href="https://www.linkedin.com/in/felix-rohlin-070a8980/"><img src="/Pics/linkedin.svg" alt="facebook icon"></a>
+      </div>        
+      <!--
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    -->
+    <header>
+       <div class="hvwrap">
+           <div class="hvwrap1">
+        <img src="/Pics/Profile-felix-rohlin-compressor.gif" class="profilepic" alt="profilepic">
+       <h1>Felix Rohlin</h1>
+    </div>
+    <div class="hvwrap2">
+        <div class="navright">
+            <ul class="navbar">
+                <li><a href="/Index.html"><strong>Start</strong></a></li>
+                <li><a href="/Sida-1/om-mig.html"><strong>Om mig</strong></a></li>
+                <li><a href="/Sida-2/cv.html"><strong>CV</strong></a></li>
+                <li><a href="/Sida-3/projekt.html"><strong>Projekt</strong></a></li>
+                <li><a href="/Sida-4/Kontakt.html"><strong>Kontakt</strong></a></li>
+              </ul>
+          <hr>
+        </div>
+
+        <ul class="headerinfo">
+            <li class="toplist">Felix.rohlin@gmail.com</li>
+            <li class="toplist">0760820915</li>
+        </ul>
+    </div>
+    </div>
+<hr>
+    </header>
+    <main>
+        <div class="kontaktsida">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037.476300878223!2d17.982965215726153!3d59.291602081645685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f765570c4a57d%3A0x738203765a4ef99c!2sInteckningsv%C3%A4gen%2015%2C%20129%2031%20H%C3%A4gersten%2C%20Sweden!5e0!3m2!1sen!2spt!4v1581877730986!5m2!1sen!2spt" width="480" height="400"  style="border:0;" allowfullscreen=""></iframe>
+        <div class="contactform">
+            <h2 class="contact_h2">Kontact</h2>
+            <form action="contact.php" method="POST">
+                <fieldset>
+                    <legend>Din info</legend>
+                    <p>
+                        <label for="uname">Namn:</label>
+                        <label for="uname" class="reqfield"><strong class="required" title="Mandatory field">*</strong></label>
+                        <input type="text" name="uname" id="uname" required placeholder="Förnamn, Efternamn"/>
+                    </p>
+                    <p>
+                        <label for="umail">Email:</label>
+                        <label for="umail" class="reqfield">
+                            <strong class="required" title="Mandatory field">*</strong>
+                        </label>
+                        <input type="email" name="umail" id="umail" required placeholder="Emailaddress"/>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Meddelande</legend>
+                    <p>
+                        <label for="mmessage">Text:</label>
+                        <label for="mmessage" class="reqfield">
+                            <strong class="required" title="Mandatory field">*</strong>
+                        </label>
+                        <textarea id="mmessage" name="mmessage" required placeholder="Skriv ditt meddelande här"></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <input value="skicka" type="submit" />
+                    </p>
+                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+                </fieldset>
+            </form>
+          </div>
+         
+        </div>
+    </main>
+    <footer>
+        <hr>
+    </footer>
+</body>
+</html>

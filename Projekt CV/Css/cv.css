@@ -1,0 +1,316 @@
+/* Main */
+* {
+  box-sizing: border-box;
+}
+html {
+    background-color: rgb(52, 52, 52);
+    color: blanchedalmond;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    min-height: 70vh;
+}
+header {
+  /*  border: 1px solid black; */
+}
+footer {
+    margin: auto;
+    width: 80%;
+}
+.hvwrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.hvwrap1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.hvwrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+.profilepic {
+    width: 150px;
+    height: 150px;
+}
+.headerinfo {
+    list-style-type: none;
+}
+.toplist {
+    float: none;
+}
+h1 {
+    color: blanchedalmond;
+}
+
+/* side bar */
+.sidebar {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20em;
+    padding-right: 10px;
+}
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  .main {
+    margin-left: 60px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* nav bar */
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: blanchedalmond;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    padding: 8px;
+    padding-bottom: 0px;
+    color: grey;
+    text-decoration: none;
+  }
+  li a:hover {
+      color: honeydew;
+  }
+  .headerinfo {
+    list-style-type: none;
+}
+/* Start page */
+.startpagepic {
+    width: 100%;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("/Pics/DSC_0484-1compressed.jpg");
+  
+    /* Set a specific height */
+    min-height: 700px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/* om mig */
+    #rubrik {
+        text-align: center;
+        color: blanchedalmond;
+
+}
+    .om-mig {
+        width: 80%;
+        height: 60vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        padding-top: 2em;
+}
+    .om-mig-txt {
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: rgb(225, 225, 225);
+}
+
+/* CV */
+.cv-header {
+    text-align: center;
+}
+.cv-main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+ /*   border: 1px solid black; */
+    align-items: center;
+}
+.hvwrap-cv-left {
+ width: 50%;
+}
+.hvwrap-cv-right {
+    width: 50%;
+}
+dt {
+    font-weight: bold;
+    color:rgb(177, 177, 177);
+}
+dd {
+    font-size: small;
+    color: rgb(225, 225, 225);
+}
+.box {
+    border: 1px solid black;
+    height: 10em;
+    width: 40%;
+    margin: auto;
+  }
+  .tablecv {
+    display: flex;
+    justify-content: center;
+  }
+  table {
+    border-collapse: collapse;
+    position: relative;
+} 
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+    color: white;
+    padding: 10px;
+    background-color: rgb(214, 200, 186);
+    font-weight: bold;
+}
+td {
+    text-align: left;
+    padding: 5px;
+}
+#rubrik2 {
+    text-align: center;
+    color: blanchedalmond;
+    font-size: medium;
+}
+.erfarenhetslista {
+
+}
+
+/* Projekt */
+
+.hvwrap-projekt {
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+   border: 1px solid black;
+}
+.projekt-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+.projekt {
+    width: 40%;
+    border: 1px solid black;
+}
+  div.gallery:hover {
+    border: 1px solid rgb(229, 226, 226);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Kontakt */ 
+    .contactform {
+      margin: auto;
+      max-width: 480px; 
+      font-family: "helvetica neue", "liberation sans", calibri, arial, sans-serif;
+}
+    .contact_h2{
+       margin: 10px;
+       text-align: center;
+}
+    fieldset {
+        padding: 1em;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        min-width: 400px;
+    }
+    legend {
+        font-size: larger;
+    }
+    form p {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    label {
+        flex: 0 1 10ch;
+        text-align: right;
+        padding-right: 1ch;
+    }
+    .reqfield {
+        flex: 0 0 2ch;
+        order: 1;
+        text-align: center;
+        padding-right: 0;
+    }
+    input[type=text], input[type=email], textarea {
+        flex: 1 1 25ch;
+        max-width: 300px;
+    }
+    textarea {
+        height: 5em;
+        resize: vertical;
+    }
+    input[type="submit"] {
+        display: block;
+        margin: auto;
+    }
+    .kontaktsida {
+        display: flex;
+        padding: 10vh;
+
+}
